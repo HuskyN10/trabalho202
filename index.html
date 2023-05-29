@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Desenvolvimento Econômico</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #F0FFF0;
+      margin: 0;
+      padding: 0;
+    }
+    
+    header {
+      background-color: #008000;
+      padding: 20px;
+      color: #FFFFFF;
+      text-align: center;
+    }
+    
+    h1 {
+      margin: 0;
+    }
+    
+    main {
+      padding: 20px;
+    }
+    
+    p {
+      line-height: 1.5;
+    }
+    
+    footer {
+      background-color: #008000;
+      padding: 20px;
+      color: #FFFFFF;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Desenvolvimento Econômico</h1>
+  </header>
+  
+  <main>
+    <h2>Sobre o Desenvolvimento Econômico</h2>
+    <p>O desenvolvimento econômico refere-se ao processo pelo qual uma economia melhora sua capacidade de produção, distribuição e consumo de bens e serviços. É um assunto de grande importância para governos, empresas e sociedade em geral.</p>
+    
+    <h2>Benefícios do Desenvolvimento Econômico</h2>
+    <ul>
+      <li>Aumento do padrão de vida da população;</li>
+      <li>Criação de empregos;</li>
+      <li>Melhoria da infraestrutura;</li>
+      <li>Estímulo à inovação e empreendedorismo;</li>
+      <li>Redução da pobreza;</li>
+      <li>Maior disponibilidade de recursos para investimentos em áreas como saúde e educação.</li>
+    </ul>
+    
+    <h2>Estratégias para o Desenvolvimento Econômico Sustentável</h2>
+    <ol>
+      <li>Investimento em educação e capacitação da mão de obra;</li>
+      <li>Promoção de políticas de incentivo ao empreendedorismo;</li>
+      <li>Desenvolvimento de infraestrutura adequada;</li>
+      <li>Estímulo à pesquisa e desenvolvimento;</li>
+      <li>Políticas de proteção ao meio ambiente e desenvolvimento sustentável.</li>
+    </ol>
+    
+    <h2>Exemplo de Interação em JavaScript</h2>
+    <p>Clique no botão abaixo para mudar a cor de fundo:</p>
+    <button id="changeColorButton">Mudar Cor</button>
+  </main>
+  
+  <footer>
+    <p>&copy; 2023 Desenvolvimento Econômico - Todos os direitos reservados.</p>
+  </footer>
+  
+  <script>
+    document.getElementById("changeColorButton").addEventListener("click", function() {
+      var body = document.querySelector("body");
+      body.style.backgroundColor = getRandomColor();
+    });
+
+    function getRandomColor() {
+      var letters = "0123456789ABCDEF";
+      var color = "#";
+      for (var i = 0; i < 6; i++) {
+        color += letters[Math.floor(Math.random() * 16)];
+      }
+      return color;
+    }
+  </script>
+</body>
+</html>
